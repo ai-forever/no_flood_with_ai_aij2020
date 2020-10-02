@@ -1,1 +1,1 @@
-# no_flood_with_ai_aij2020
+# NoFloodWithAI: Прогнозирование паводков на реке Амур
