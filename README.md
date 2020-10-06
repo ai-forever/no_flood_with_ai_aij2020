@@ -23,7 +23,7 @@
 
 ### Описание данных
 
-Данные можно скачать [тут](https://drive.google.com/file/d/1tGpsh9zO7v9Guy4K7xYu0ZHeAlda0k4-/view?usp=sharing).
+Данные можно скачать [тут](https://drive.google.com/file/d/1B42XTEO4xuHgN5fDc6XsSoqs_OSOrdkJ/view?usp=sharing).
 
 Подробное описание этих данных можно найти в ```desc/datasets_description.pdf```
 
