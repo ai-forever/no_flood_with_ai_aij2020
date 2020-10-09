@@ -23,7 +23,7 @@
 
 ### Описание данных
 
-Данные можно скачать [тут](https://drive.google.com/file/d/1n--sDqyjDbNgaSTfqJ6MK0tRE5rVDrZz/view?usp=sharing).
+Данные можно скачать [тут](https://storage.yandexcloud.net/datasouls-ods/materials/c6be1003/datasets.zip).
 
 Подробное описание этих данных можно найти в [```desc/datasets_description.pdf```](https://github.com/sberbank-ai/no_flood_with_ai_aij2020/blob/main/desc/datasets_description.pdf)
 
