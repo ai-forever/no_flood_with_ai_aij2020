@@ -25,12 +25,12 @@
 
 Данные можно скачать [тут](https://drive.google.com/file/d/1n--sDqyjDbNgaSTfqJ6MK0tRE5rVDrZz/view?usp=sharing).
 
-Подробное описание этих данных можно найти в ```desc/datasets_description.pdf```
+Подробное описание этих данных можно найти в [```desc/datasets_description.pdf```](https://github.com/sberbank-ai/no_flood_with_ai_aij2020/blob/main/desc/datasets_description.pdf)
 
 
 ### Бейзлайн
 
-Ноутбук с бейзлайном: ```baseline.ipynb```
+Ноутбук с бейзлайном: [```baseline.ipynb```](https://github.com/sberbank-ai/no_flood_with_ai_aij2020/blob/main/baseline.ipynb)
 
 ### Оценка решения
 
