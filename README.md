@@ -4,6 +4,8 @@
 
 # NoFloodWithAI: прогнозирование паводков на реке Амур
 
+The English version of this document is [here](https://github.com/sberbank-ai/no_flood_with_ai_aij2020/blob/main/README.en.md)
+
 Хакатон по прогнозированию уровня воды на реке Амур на его различных участках
 
 ### Описание задачи
