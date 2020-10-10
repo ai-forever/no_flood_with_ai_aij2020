@@ -1,44 +1,46 @@
-# NoFloodWithAI: прогнозирование паводков на реке Амур
+<p align="center">
+  <img src="pics/AIJ_Logo.png" width="100%">
+</p>
 
-Хакатон по прогнозированию уровня воды на реке Амур на его различных участках
+# NoFloodWithAI: Flash floods oon the Amur River
 
-### Описание задачи
+NoFloodWithAI is a special track with a socially important theme prepared jointly with the Ministry of Emergency Situations, Ministry of Natural Resources and Rosgidromet of Russia. 
 
-Необходимо разработать алгоритм прогнозирования уровней воды р. Амур для следующих населенных пунктов (гидропостов): Джалинда, Благовещенск, Иннокентьевка, Ленинское, Хабаровск, Комсомольск-на-Амуре, Николаевск-на-Амуре на 10 дней вперед.
+### Task description
 
-Река Амур является трансграничной рекой, основная часть бассейна которой находится в пределах Российской Федерации. Для Амура характерна низкая водность в зимний период, небольшие половодья весной и неоднократные резкие подъемы воды во второй половине лета и в начале осени. Маловодные периоды сменяются годами большой воды.
-В многолетнем режиме водного стока Амура отчётливо выражено чередование периодов пониженной и повышенной водности, каждый продолжительностью 12-17 лет. Амур по оценке гидрологов и исходя из истории наблюдений вошел в очередной период высокой водности в конце 2000-х. Исходя из данной гидрологической закономерности режима Амура, в ближайшие 5-7 лет следует ожидать сложную паводковую обстановку в течении Среднего и Нижнего Амура (наиболее сложная обстановка от слияния р. Сунгари и до Комсомольского района включительно). 
+Contestants are invited to develop an algorithm for short-term forecasting of water levels in the Amur River for the following settlements (gauging stations): Dzhalinda, Blagoveshchensk, Innokentievka, Leninskoye, Khabarovsk, Komsomolsk-on-Amur, Nikolaevsk-on-Amur for 10 days in advance in order to prevent emergency situations in Russia’s regions. The results of the contest will be reused to mitigate environmental risks and minimize economic damage wrought on the regions.
 
-Наиболее крупномасштабные наводнения произошли в 2013 и 2019 гг. Причиной наводнений стали тропические циклоны, которые несли теплый влажный воздух, вызывали фронтальные разделы и сильные атмосферные осадки. В 2013 на значительной площади за 2-3 мес. сумма выпавших осадков превысила годовую, а местами и полуторагодовую норму.
+The Amur River is a transboundary river, the main part of the basin of which lies within the Russian Federation. The Amur is characterized by low water content in winter period, small floods in spring and repeated sharp rises in water in the second half of summer and early autumn. Low-water periods are followed by years of high water. In the long-term regime of the Amur water flow, the alternation of periods of low and high water content is clearly expressed, each lasting about 12-17 years. Amur, according to the assessment of hydrologists and based on the observation history, entered another period of high water content in the late 2000s. Based on this hydrological regularity of the Amur regime, in the next 5-7 years, a complex flood situation should be expected in the course of the Middle and Lower Amur (the most difficult situation is from the confluence of the Sungari River to the Komsomolsk District, inclusive).
 
-В целях минимизации экономического ущерба необходимо создать инструмент для прогнозирования паводковых волн на Амуре и его притоках.
+The largest floods occurred in 2013 and 2019. The floods were caused by tropical cyclones, which carried warm humid air, caused frontal sections and heavy precipitation. In 2013, over a large area for 2-3 months the amount of precipitation has exceeded the annual, and in some places even one and a half year norm.
+
+In order to minimize economic damage, it is necessary to create a tool for forecasting flood waves on the Amur and its tributaries.
 
 <p align="center">
   <img src="pics/map.jpg" width="100%">
 </p>
 
-На карте выше представлен бассейн реки Амур и его основные притоки с градацией по среднему расходу воды. 
-Синие точки — все гидропосты из датасета, белые — интересующие гидропосты, розовые — метеостанции.
+The map above shows the Amur River basin and its main tributaries, with gradation based on average water discharge. Blue points - all gauging stations from the dataset, white - gauging stations of interest, pink - weather stations.
 
 
-### Описание данных
+### Dataset description
 
-Данные можно скачать [тут](https://storage.yandexcloud.net/datasouls-ods/materials/c6be1003/datasets.zip).
+The dataset can be downloaded [тут](https://storage.yandexcloud.net/datasouls-ods/materials/c6be1003/datasets.zip).
 
-Подробное описание этих данных можно найти в [```desc/datasets_description.pdf```](https://github.com/sberbank-ai/no_flood_with_ai_aij2020/blob/main/desc/datasets_description.pdf)
+A detailed description of this dataset can be found in [```desc/datasets_description.pdf```](https://github.com/sberbank-ai/no_flood_with_ai_aij2020/blob/main/desc/datasets_description_ru.pdf)
 
 
-### Бейзлайн
+### Baseline
 
-Ноутбук с бейзлайном: [```baseline.ipynb```](https://github.com/sberbank-ai/no_flood_with_ai_aij2020/blob/main/baseline.ipynb)
+Notebook with a baseline task: [```baseline.ipynb```](https://github.com/sberbank-ai/no_flood_with_ai_aij2020/blob/main/baseline.ipynb)
 
-### Оценка решения
+### Solution description
 
-Соревнование будет проходить в формате хакатона.
+A solution is a repository hosted on [github](https://github.com) consisting of code written in Python only, complete with comments describing the proposed approach in detail and a presentation in pdf format. Priority will be given to innovative and out-of-the-box features and solutions that will help produce the highest-quality forecast. An example of such a repository from the organizers of the hackathon can be found [here](https://github.com/denndimitrov/submission_example_amur).
 
-Решением считается репозиторий на [github](https://github.com) c кодом в jupyter notebook (очень хорошо и подробно описанным + всеми данными, необходимыми для его запуска), который должен без ошибок запускаться по кнопке Run All. Также требуется презентация (в формате pdf), описывающая предложенный метод прогнозирования. Пример такого репозитория от организаторов хакатона можно найти [тут]().
+The solution score will be given by the contest jury (on a scale of 0 to 10, where 10 represents the highest possible score and 0 is the lowest score). The contest jury will assess the description of the proposed approach, with the key focus on innovation, the model’s ability to be extrapolated and replicated for use at other rivers. The jury consists of the organizer’s representatives and guest experts.
 
-Жюри будет выставлять оценки от 0 до 10, принимая во внимание как глубину идеи (в том числе возможность ее переиспользования для предсказания паводков на других реках), так и качество работы предложенного алгоритма в определенные (интересующие жюри) моменты времени. 
+Individual contestants or teams earning the highest total score will be declared track winners. 
 
-Более подробно о критериях оценивания можно прочитать в [```desc/solution_requirements_ru.md```](https://github.com/sberbank-ai/no_flood_with_ai_aij2020/blob/main/desc/solution_requirements_ru.md)
+More details about the assessment criteria can be found in [```desc/solution_requirements_en.md```](https://github.com/sberbank-ai/no_flood_with_ai_aij2020/blob/main/desc/solution_requirements_en.md)
 
