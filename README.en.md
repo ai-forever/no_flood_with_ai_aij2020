@@ -2,7 +2,7 @@
   <img src="pics/AIJ_Logo.png" width="100%">
 </p>
 
-# NoFloodWithAI: Flash floods oon the Amur River
+# NoFloodWithAI: Flash floods on the Amur River
 
 NoFloodWithAI is a special track with a socially important theme prepared jointly with the Ministry of Emergency Situations, Ministry of Natural Resources and Rosgidromet of Russia. 
 
