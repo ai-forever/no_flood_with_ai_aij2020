@@ -1,68 +1,66 @@
-# Описание данных
+# Datasets description
 
 
 
 1. ### /hydro/
 
-   Полный архив данных наблюдений на гидрологических постах сети Росгидромета за период с 1984 по 2018 гг. Содержит данные об уровнях воды, расходах, температуре воды, наблюдения за поверхностью воды (становление ледостава, вскрытие).
+   Complete archive of observation data at hydrological stations of the Russian Federal Service for Hydrometeorology and Environmental Monitoring network for the period from 1984 to 2018. Contains data on water levels, flow rates, water temperature, observation of the water surface (formation of freeze-up, opening).
 
-- **{номер гидрологического поста}_daily.csv**
-   Файлы содержат ежедневные значения уровня воды на гидрологический постах:
+- **{hydrological station number}_daily.csv**
+   The files contain daily water level values at hydrological posts:
 
-  - 'Дата' - дата измерений
+  - 'Дата' - date of measurements
 
-  - 'Уровень средний' - средний уровень воды за день (см.)
+  - 'Уровень средний' - average water level per day (cm.)
 
-  - 'Уровень миним.' - минимальный уровень воды за день (см.)
+  - 'Уровень миним.' - minimum water level per day (cm.)
 
-  - 'Уровень максим.' – максимальный уровень воды за день (см.)
+  - 'Уровень максим.' – maximum water level per day (cm.)
 
-  - 'Темпр. средняя' - средняя температура воды за день (°C)
+  - 'Темпр. средняя' - average water temperature per day (°C)
 
-  - {много пропусков}
+  - {many gaps}
 
-  - 'KCBO' - код состояния водного объекта. Подробнее в файле
+  - 'KCBO' - water body status code. More in file '/Пояснения/гидрология 1985-2018.rtf'
 
-    '/Пояснения/гидрология 1985-2018.rtf'
+- **{hydrological station number}_ice.csv** 
 
-- **{номер гидрологического поста}_ice.csv** 
+  Periodic values (once every 5 days) of snow height and ice thickness at the hydrological station
 
-  Периодические значения (раз в 5 дней) высоты снега и толщины льда на гидрологическом посте 
+  * 'Дата' - measurement date
 
-  * 'Дата' - дата измерения
+  * 'Толщина льда' - ice thickness
+  * 'Высота снега' - snow height
+  * 'Место измер.' - ice measurement site code. More in file '/Пояснения/гидрология 1985-2018.rtf'
 
-  * 'Толщина льда'
-  * 'Высота снега'
-  *  'Место измер.' - код места ледовых измерений. Подробнее в файле '/Пояснения/гидрология 1985-2018.rtf'
+- **{hydrological station number}_disch_d.csv**
 
-- **{номер гидрологического поста}_disch_d.csv**
+  Average daily water consumption
 
-  Среднесуточный расход воды
+  - 'Дата' - measurement date
+  - 'Расход воды' - average daily water consumption (m3/с)
 
-  -  'Дата'
-  - 'Расход воды' - среднесуточный расход воды (м3/с)
+- **{hydrological station number}_disch_m.csv** 
 
-- **{номер гидрологического поста}_disch_m.csv** 
+  Monthly extremes of water consumption
 
-  Месячные экстремумы расхода воды
+  *  'Месяц.год' - month.year
 
-  * 'Месяц.год'
+  *  'Расход.минимал' - minimum consumption per month (m3/с)
 
-  *  'Расход.минимал' - Минимальный расход за месяц (м3/с)
+  * 'День 1-ый' - the first day when the minimum flow was observed
 
-  * 'День 1-ый' - Первый день, когда наблюдался минимальный расход
+  * 'День посл.' - the last day when the minimum flow was observed
 
-  * 'День посл.' - Последний день, когда наблюдался минимальный расход
+  * 'Число случ.' - the number of times when the minimum flow was observed
 
-  * 'Число случ.' - Число случаев, когда наблюдался минимальный расход
+  * 'Расход максимал.' - maximum consumption per month (м3/с)
 
-  * 'Расход максимал.' -Максимальный расход за месяц (м3/с)
+  * 'День 1-ый' - the first day when the maximum flow was observed
 
-  * 'День 1-ый' - Первый день, когда наблюдался максимальный расход
+  * 'День посл.' - the last day when maximum flow was observed
 
-  * 'День посл.' - Последний день, когда наблюдался максимальный расход
-
-  * 'Число случ.' - Число случаев, когда наблюдался расход максимальный расход
+  * 'Число случ.' - the number of cases when the maximum flow rate was observed
 
     
 
@@ -70,122 +68,121 @@
 
 - **new_data_all.csv**
 
-  Файл с данными только об уровнях воды за период 01-01-1984 — 01-10-2020.  Содержит не только архивные данные, но и оперативные с 2018 по настоящее время.
+  File with data only about water levels for the period 01-01-1984 - 01-10-2020. It contains not only archived data, but also updated data from 2018 to the present.
 
-  - 'time' - дата замера
-  - 'max_level' - максимальный уровень за день
-  - 'identifier' - номер гидрологического поста
+  - 'time' - measurement date
+  - 'max_level' - maximum level for the day
+  - 'identifier' - hydrological station number
 
 - **new_data_target.csv** 
 
-  ​	Подмножество файла **new_data_all.csv** для целевых гидрологических постов
+  ​	A subset of the **new_data_all.csv** file for target hydrological posts
 
   
 
 3. ### /meteo/
 
-   Архив данные наблюдений на метеостанциях сети Росгидромета с 1985 по 2018
+   Archive data of observations at the meteorological station of the Russian Federal Service for Hydrometeorology and Environmental Monitoring network from 1985 to 2018
 
-* **{номер метеостанции}.csv**
+* **{weather station number}.csv**
 
-  * 'station_name' Название станции
-  * 'station_id' Идентификатор станции
-  * 'visibility_distance' Горизонтальная дальность видимости
-  * 'visibility_distance_quality' Признак качества
-  * 'wind_direction' Направление ветра
-  * 'wind_direction_quality' Признак качества
-  * 'wind_speed_avg' Средняя скорость ветра
-  * 'wind_speed_avg_quality' Признак качества
-  * 'wind_speed_sign' Признак наличия знака >
-  * 'wind_speed_max' Максимальное скорость ветра
-  * 'wind_speed_max_quality' Признак качества
-  * 'wind_speed_max_sign' Признак наличия знака >
-  * 'precipitation_amount' Сумма осадков за период между сроками
-  * 'precipitation_amount_quality' Признак качества
-  * 'temperature_ground' Температура поверхности почвы в срок
-  * 'temperature_ground_quality' Признак качества
-  * 'temperature_air' Температура воздуха в срок по сухому терм-ру
-  * 'temperature_air_quality' Признак качества
-  * 'humidity' Относительная влажность воздуха в срок
-  * 'humidity_quality' Признак качества
-  * 'time' Срок наблюдения
+  * 'station_name' Station name
+  * 'station_id' Station ID
+  * 'visibility_distance' Horizontal visibility range
+  * 'visibility_distance_quality' Quality mark
+  * 'wind_direction' Wind direction
+  * 'wind_direction_quality' Quality mark
+  * 'wind_speed_avg' Average wind speed
+  * 'wind_speed_avg_quality' Quality mark
+  * 'wind_speed_sign' Presence of sign ">"
+  * 'wind_speed_max' Maximum wind speed
+  * 'wind_speed_max_quality' Quality mark
+  * 'wind_speed_max_sign' Presence of sign ">"
+  * 'precipitation_amount' Amount of precipitation for the period between periods
+  * 'precipitation_amount_quality' Quality mark
+  * 'temperature_ground' Soil surface temperature at time
+  * 'temperature_ground_quality' Quality mark
+  * 'temperature_air' Air temperature on dry term
+  * 'temperature_air_quality' Quality mark
+  * 'humidity' Relative humidity at time
+  * 'humidity_quality' Quality attribute
+  * 'time' Observation period
 
-  Подробнее в файле **/Пояснения/Метео.rtf**
+  More in file **/Пояснения/Метео.rtf**
 
   
 
 4. ### /meteo_new
 
-   Датасет с данными наблюдений на метеостанциях за период с 01-01-1984 по 31-03-2020. Количество станций меньше (только те, что входят сеть Всемирной Метеорологической Организации), чем в прошлом, но больше полей и охват
+   Dataset with observation data at weather stations for the period from 01-01-1984 to 31-03-2020. Fewer stations (only those included in the World Meteorological Organization network) than in the past, but more fields and coverage
 
-* **{номер метеостанции}.csv**
-  * stationNumber  Синоптический индекс станции Всемирной Метеорологической организации 
-  * year  Год по Гринвичу  
-  * month  Месяц по Гринвичу  
-  * day  День по Гринвичу  
-  * time  Срок по Гринвичу  
-  * localYear  Год источника (местный)  
-  * localMonth  Месяц источника (местный)  
-  * localDay  День источника (местный)  
-  * localTimePeriod  Срок источника  
-  * timePeriodNum  Номер срока в сутках по поясному декретному зимнему времени (ПДЗВ)  
-  * localTime  Время местное  
-  * tz  Номер часового пояса  
-  * startMeteoDay  Начало метеорологических суток по ПДЗВ  
-  * horizontalVisibility  Горизонтальная видимость  
-  * horizontalVisibilityQuality  Признак качества  
-  * horizontalVisibilitySign  Признак наличия знака «>»  
-  * cloudCoverTotal  Общее количество облачности  
-  * cloudCoverTotalQuality  Признак качества  
-  * pastWeather  Погода между сроками  
-  * pastWeatherQuality  Признак качества  
-  * presentWeather  Погода в срок наблюдения  
-  * presentWeatherQuality  Признак качества  
-  * windDirection  Направление ветра  
-  * windDirectionQuality  Признак качества  
-  * windSpeed  Средняя скорость ветра  
-  * windSpeedQuality  Признак качества  
-  * windSpeedSign  Признак наличия знака «>»  
-  * maximumWindGustSpeed  Максимальная скорость ветра  
-  * maximumWindGustSpeedQuality  Признак качества  
-  * maximumWindGustSpeedSign  Признак наличия знака «>»  
-  * totalAccumulatedPrecipitation  Сумма осадков за период между сроками  
-  * totalAccumulatedPrecipitationQuality  Признак качества  
-  * soilTemperature  Температура поверхности почвы  
-  * soilTemperatureQuality  Признак качества  
-  * groundMinimumTemperature  Минимальная температура поверхности почвы  
-  * groundMinimumTemperatureQuality  Признак качества  
-  * airTemperature  Температура воздуха по сухому термометру  
-  * airTemperatureQuality  Признак качества  
-  * minimumTemperatureAtHeightAndOverPeriodSpecified  Минимальная температура воздуха между сроками  
-  * minimumTemperatureAtHeightAndOverPeriodSpecifiedQuality  Признак качества  
-  * maximumTemperatureOverPeriodSpecified  Максимальная температура воздуха между сроками  
-  * maximumTemperatureOverPeriodSpecifiedQuality  Признак качества  
-  * relativeHumidity  Относительная влажность воздуха  
-  * relativeHumidityQuality  Признак качества  
-  * vapourPressure  Дефицит насыщения водяного пара  
-  * vapourPressureQuality  Признак качества  
-  * dewpointTemperature  Температура точки росы  
-  * dewpointTemperatureQuality  Признак качества  
-  * pressure  Атмосферное давление на уровне станции  
-  * pressureQuality  Признак качества  
-  * pressureReducedToMeanSeaLevel  Атмосферное давление на уровне моря  pressureReducedToMeanSeaLevelQuality  Признак качества  
-  * characteristicOfPressureTendency  Характеристика барической тенденции  characteristicOfPressureTendencyQuality  Признак качества  
-  * HourPressureChange3  Величина барической тенденции  
-  * HourPressureChange3Quality  Признак качества  stationId  идентификатор локальный (атрибут _meteo_ в [АСУНП](http://asunp.meteo.ru/geoits-rest/services/asunp/geo.json))
+* **{weather station number}.csv**  
+  * stationNumber The synoptic index of the World Meteorological Organization station
+  * year (GMT)
+  * month (GMT)
+  * day (GMT)
+  * time (GMT)
+  * localYear Source year (local)
+  * localMonth Source month (local)
+  * localDay Source day (local)
+  * localTimePeriod Source time
+  * timePeriodNum Period number in days according to standard winter time (PDZV)
+  * localTime Local time
+  * tz Time zone number
+  * startMeteoDay Beginning of the meteorological day according to PDZV
+  * horizontalVisibility Horizontal visibility
+  * horizontalVisibilityQuality Quality attribute
+  * horizontalVisibilitySign Sign of the presence of the ">"
+  * cloudCoverTotal Total amount of clouds
+  * cloudCoverTotalQuality Quality mark
+  * pastWeather Weather between dates
+  * pastWeatherQuality Quality mark
+  * presentWeather Weather at time of observation
+  * presentWeatherQuality Quality attribute
+  * windDirection Wind direction
+  * windDirectionQuality Quality mark
+  * windSpeed Average wind speed
+  * windSpeedQuality Quality mark
+  * windSpeedSign Sign of the presence of the sign ">"
+  * maximumWindGustSpeed Maximum wind speed
+  * maximumWindGustSpeedQuality Quality mark
+  * maximumWindGustSpeedSign Sign of the presence of the ">"
+  * totalAccumulatedPrecipitation The amount of precipitation for the period between periods
+  * totalAccumulatedPrecipitationQuality Quality attribute
+  * soilTemperature Soil surface temperature
+  * soilTemperatureQuality Quality mark
+  * groundMinimumTemperature Minimum soil surface temperature
+  * groundMinimumTemperatureQuality Quality mark
+  * airTemperature Dry bulb temperature
+  * airTemperatureQuality Quality mark
+  * minimumTemperatureAtHeightAndOverPeriodSpecified Minimum air temperature between periods
+  * minimumTemperatureAtHeightAndOverPeriodSpecifiedQuality Quality attribute
+  * maximumTemperatureOverPeriodSpecified Maximum air temperature between periods
+  * maximumTemperatureOverPeriodSpecifiedQuality Quality mark
+  * relativeHumidity Relative air humidity
+  * relativeHumidityQuality Quality attribute
+  * vapourPressure Water vapor saturation deficiency
+  * vapourPressureQuality Quality mark
+  * dewpointTemperature Dew point temperature
+  * dewpointTemperatureQuality Quality mark
+  * pressure Atmospheric pressure at station level
+  * pressureQuality Quality mark
+  * pressureReducedToMeanSeaLevel Atmospheric pressure at sea level pressureReducedToMeanSeaLevelQuality Quality attribute
+  * characteristicOfPressureTendency Characteristic of the pressure tendency characteristicOfPressureTendencyQuality Quality attribute
+  * HourPressureChange3 The magnitude of the pressure trend
+  * HourPressureChange3Quality Quality attribute stationId local identifier (attribute _meteo_ in [Automated accounting system for observation units] (http://asunp.meteo.ru/geoits-rest/services/asunp/geo.json))
 
-  Подробнее в **meteo_new/readme.pdf**
+  More details in **meteo_new/readme.pdf**
 
 
 
 5. ### /processed_data
 
-- asunp.pkl - таблица с описанием гидрологических и метеорологических постов. Взято с 'http://asunp.meteo.ru/geoits-rest/services/asunp/geo.json'
-- daily.pkl - таблица с соединенными файлами {номер_станции}_daily.csv из папки /hydro и приведенными к соответствующим форматам столбцами.
-- disch_d.pkl - таблица с соединенными файлами {номер_станции}_disch_d.csv из папки /hydro и приведенными к соответствующим форматам столбцами.
-- disch_m.pkl - таблица с соединенными файлами {номер_станции}_disch_m.csv из папки /hydro и приведенными к соответствующим форматам столбцами.
-- ice.pkl - таблица с соединенными файлами {номер_станции}_ice.csv из папки /hydro и приведенными к соответствующим форматам столбцами.
-- meteo_coords.pkl - таблица с номерами и координатами метеостанций. Построена на основе asunp.pkl
-- s2m.pkl - таблицами с номерами гидропостов, номерами, ближайших метеостанций и расстояний между ними.
-   Построена на основе asunp.pkl
-- station_coords.pkl - таблица с номерами и координатами гидрологических постов. Построена на основе asunp.pkl
+- asunp.pkl - a table with a description of hydrological and meteorological posts. Taken from 'http://asunp.meteo.ru/geoits-rest/services/asunp/geo.json'
+- daily.pkl - a table with the linked files {station_number}_daily.csv from the /hydro folder and the columns in the corresponding formats.
+- disch_d.pkl - a table with the linked files {station_number}_disch_d.csv from the /hydro folder and the columns in the corresponding formats.
+- disch_m.pkl - a table with the linked files {station_number}_disch_m.csv from the /hydro folder and the columns in the corresponding formats.
+- ice.pkl - a table with the linked files {station_number}_ice.csv from the /hydro folder and the columns in the corresponding formats.
+- meteo_coords.pkl - a table with numbers and coordinates of weather stations. Built on top of asunp.pkl
+- s2m.pkl - tables with gauging station numbers, numbers, nearest weather stations and distances between them. Built on top of asunp.pkl
+- station_coords.pkl - table with numbers and coordinates of hydrological posts. Built on top of asunp.pkl
