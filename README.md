@@ -31,7 +31,7 @@ The English version of this document is [here](https://github.com/sberbank-ai/no
 
 Данные можно скачать [тут](https://drive.google.com/file/d/1vgS7EON5tjef5tFoPlQc1aBi0kC9eKhB/view?usp=sharing).
 
-Подробное описание этих данных можно найти в [```desc/datasets_description_ru.md```](https://github.com/sberbank-ai/no_flood_with_ai_aij2020/blob/main/desc/datasets_description_ru.md)
+Подробное описание этих данных можно найти в [```desc/datasets_description_ru.md```](/desc/datasets_description_ru.md)
 
 
 ### Бейзлайн
