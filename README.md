@@ -29,9 +29,9 @@ The English version of this document is [here](https://github.com/sberbank-ai/no
 
 ### Описание данных
 
-Данные можно скачать [тут](https://storage.yandexcloud.net/datasouls-ods/materials/c6be1003/datasets.zip).
+Данные можно скачать [тут](https://drive.google.com/file/d/1vgS7EON5tjef5tFoPlQc1aBi0kC9eKhB/view?usp=sharing).
 
-Подробное описание этих данных можно найти в [```desc/datasets_description_ru.pdf```](https://github.com/sberbank-ai/no_flood_with_ai_aij2020/blob/main/desc/datasets_description_ru.pdf)
+Подробное описание этих данных можно найти в [```desc/datasets_description_ru.md```](/desc/datasets_description_ru.md)
 
 
 ### Бейзлайн
