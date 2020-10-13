@@ -36,7 +36,7 @@ Notebook with a baseline task: [```baseline.ipynb```](https://github.com/sberban
 
 ### Solution description
 
-A solution is a repository hosted on [github](https://github.com) consisting of code written in Python only, complete with comments describing the proposed approach in detail and a presentation in pdf format. Priority will be given to innovative and out-of-the-box features and solutions that will help produce the highest-quality forecast. An example of such a repository from the organizers of the hackathon can be found [here](https://github.com/denndimitrov/submission_example_amur).
+A solution is a repository hosted on [github](https://github.com). An example of such a repository from the organizers of the hackathon can be found [here](https://github.com/kclosu/no_flood_with_ai).
 
 The solution score will be given by the contest jury (on a scale of 0 to 10, where 10 represents the highest possible score and 0 is the lowest score). The contest jury will assess the description of the proposed approach, with the key focus on innovation, the model’s ability to be extrapolated and replicated for use at other rivers. The jury consists of the organizer’s representatives and guest experts.
 
