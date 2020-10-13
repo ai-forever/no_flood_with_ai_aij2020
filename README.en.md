@@ -4,7 +4,7 @@
 
 # NoFloodWithAI: Flash floods on the Amur River
 
-NoFloodWithAI is a special track with a socially important theme prepared jointly with the Ministry of Emergency Situations, Ministry of Natural Resources and Rosgidromet of Russia. 
+NoFloodWithAI is a special track with a socially important theme prepared jointly with the Ministry of Emergency Situations, Ministry of Natural Resources and The Russian Federal Service for Hydrometeorology and Environmental Monitoring. 
 
 ### Task description
 
