@@ -1,49 +1,54 @@
-## Обязательные требования к решению
-Репозиторий-решение должен содержать (см. также [пример](https://github.com/kclosu/no_flood_with_ai) репозитория от организаторов):
+## Mandatory solution requirements
 
-* **Jupyter Notebook** с пошаговым построением модели и комментариями;  
-* **Презентацию** (в формате pdf), описывающую предложенный метод прогнозирования. Презентация не обязательно должна быть в формате слайдов;
-* **Dockerfile** для запуска скрипта `forecast.py`, генеририющего прогноз максимальных уровней воды на указанный период. Период указывается в качестве параметров командной строки при запуске докер-контейнера
+The solution repository should contain (see also the [sample repository](https://github.com/kclosu/no_flood_with_ai) from the organizers):
 
-   ```docker run -it ... 2020-10-11 2020-10-21 ```
+- **Jupiter Notebook** with step-by-step model construction and comments;
 
-  Результатом работы скрипта является таблица, где в 10 строках, соответствующих 10 следующим дням, указаны прогнозные значения уровней;
-<p align="center">
-  <img src="../pics/data.png">
-</p>
+- **A presentation** (in pdf format) describing the proposed forecasting method. The presentation doesn't have to be in slide format;
 
-## Модель для прогнозирования паводков должна соответствовать следующим критериям:
+- **Dockerfile** to run the script, generating a forecast of maximum water levels for the specified period. The period is specified as command line parameters when starting the docker container
 
-* Коэффициент Нэша — Сатклиффа для каждого поста больше 0.5 
-* Она должна обеспечивать надежныe прогнозы с достаточной заблаговременностью предупреждения (10 суток);
-* Иметь приемлемую степень точности (MAE < 50);
-* Заблаговременно прогнозировать аномальные (превышающие отметки неблагоприятных и опасных) уровней;
-* Заблаговременно прогнозировать резкие изменения уровня;
+  ```docker run -it ... 2020-10-11 2020-10-21```
 
-### Пример
+  The script output would be a similar file where ten strings corresponding to the next ten days contain projected water level values.
 
-Рассмотрим график. Зелёным обозначен наблюдаемый уровень воды, синим — результат модели _А_, оранжевым — результат модели _Б_ 
+  <p align="center">
+    <img src="../pics/data.png">
+  </p>
+
+## The flood forecast model should meet the following criteria:
+
+- The Nash–Sutcliffe coefficient for each hydro monitoring point > 0.5
+- Provide reliable forecasts within a sufficient range (ten days)
+- Be acceptably accurate (MAE up to 50)
+- Provide an advance forecast of abnormal (above unfavorable or dangerous) levels
+- Provide an advance forecast of sharp level changes.
+
+### Example
+
+Let’s have a look at the chart below. The green curve shows the observed water level, the blue curve shows the output of Model _A_, and the orange one, the output of Model _B_. 
 
 <p align="center">
   <img src="../pics/compare_models.png">
 </p>
 
-Предпочтение будет отдано модели _А_ (синий), т.к. обеспечена лучшая заблаговременность прогноза
 
-## Дополнительно будут оцениваться
+Model _A_ (blue) will be given preference, because it provides a better advance forecast.
 
-* Учёт физических основ формирования и динамики важнейших характеристик водного режима: метеорологические условия, накопление и таяние снега, испарение, вертикальный тепло- и влагоперенос в ненасыщенной зоне почвы, горизонтальное движение воды по склонам водосбора, подповерхностный и грунтовый сток;
-* Учёт основных закономерностей явлений и процессов, протекающих в речных системах: половодье, паводки, межень – фазы водного режима за год. Методы анализа цикличности и учет цикличности.
-* Учёт закономерностей движения водного потока, особенностей продвижения сформировавшихся паводочных волн по течению Амура;
-* Учет боковой приточности, особенно основных притоков – Буреи, Сунгари, Уссури. При синхронном наложении паводков притоков на основную волну, идущую с Верхнего Амура, максимальные уровни воды могут значительно возрастать;
-* исследованы возможности использования в качестве входных данных результатов ансамблевых расчетов глобальных климатических моделей
-* Учёт пространственной неоднородности характеристик водосбора (рельеф, горные, равнины);
-* Использование глобальных баз данных о храктеристиках рельефа, почв и землепользования;
-* Возможности воспроизведения многолетних рядов среднесуточных уровней воды в различных точках основного русла р. Амур и её притоков 
-* Антропогенные воздействия в гидрографической сети. Регулирование стока. влияние водохранилищ оценки влияния сбросов Зейского водохранилища на уровенный режим Амура ниже впадения р. Зеи.
-* Методы гидрологической аналогии и географической интерполяции. Применение математической статистики и теории вероятностей в гидрологических расчетах. Ве- роятностно-статистический анализ гидрологических данных. Использование метода парной и множественной линейной корреляции в гидрологических расчетах Метод соответственных уровней. Прогнозы уровней (расходов) на бесприточном участке. Время добегания и способы его определения
-* Построение связей соответственных уровней и способы их уточнения при переменном уклоне, неустойчивом русле и несинхронности боковой приточности. Прогнозы по соответственным уровням на приточном участке. Определение времени добегания и построение схемы изохрон добегания руслового стока. Способы построения связей соответственных расходов (уровней). Уточнение связей. Заблаговременность прогноза хода уровней (расходов) на бесприточном и приточном участках
-* Определение максимальных запасов воды в снеге и осадков периода половодья в русловой сети и учёт их в прогнозной модели;
-* Прогнозы водности рек на основе построения физико-статистических зависимостей стока от его основных факторов. Долгосрочные прогнозы весеннего половодья равнинных рек. Физические основы прогноза элементов половодья. Уравнение водного баланса речного стока за весенний период. Особенности формирования стока в различных физико-географических зонах. Определение максимальных запасов воды в снеге и осадков периода половодья. Потери воды на инфильтрацию, поверхностное задержание и испарение. Факторы инфильтрации воды в мерзлую почву. Вычисление запаса воды в почве на начальные даты зимы и весеннего снеготаяния в разных частях бассейна.
-* Методы определения поступления воды на поверхность бассейна. Расчетные характеристики дождей. Редукция максимальной интенсивности осадков по времени. Способы расчета предельных интенсивностей и слоя дождевых осадков. 
-* Расчет внутригодового распределения уровней при недостаточности и отсутствии материалов наблюдений. Определение максимальных уровней воды рек при недостаточности и отсутствии наблюдений;
+## Additional assessment criteria include
+
+- Taking into account the physical bases and dynamics of key streamflow characteristics: meteorological conditions, snow accumulation and melting, evaporation, vertical heat and moisture transfer in non-saturated soil areas, horizontal water flows on watershed slopes, subsurface and ground runoff
+- Taking into account key river system phenomena and process patterns: high waters, floods, baseflows – annual streamflow phases. Cycle analysis techniques and taking cyclicity into account
+- Taking into account streamflow movement patterns and the particular features of emerging flood wave movement downstream the Amur
+- Taking into account side inflows, particularly from the key tributaries of Bureya, Sungari and Ussuri. When tributary floods coincide with the main wave coming down from the Upper Amur, maximum water levels may rise dramatically
+- Studying possibilities for use of results of ensemble calculations of global climate models as input data
+- Taking into account the spatial irregularity of watershed characteristics (terrain, mountains, plains)
+- Using global data bases on terrain, soils and land use
+- Possibilities for reproduction of multi-year rows of daily average water levels at different points along the Amur riverbed and its tributaries 
+- Human impact on the hydrographic network. Discharge control. Reservoir impact. Assessment of the impact of the Zeya reservoir discharge on the Amur water levels downstream from the Zeya confluence
+- Hydrological analogy and geographical interpolation techniques. Using mathematical statistics and the probability theory in hydrological calculations. Statistical probability analysis of hydrological data. Using the pair and multiple linear correlation techniques in hydrological calculations. Corresponding levels technique. Forecasting levels (discharges) on no-influx sections. Lag time and ways to measure it
+- Building links between corresponding levels and ways to refine them on variable inclines, instable riverbeds and asynchronous side influx. Corresponding level forecasts on influx sections. Calculating lag time and building riverbed discharge lag time isochron charts. Corresponding discharge (level) link building techniques. Link refining. Level (discharge) movement forecast range on no-influx and influx sections
+- Gauging maximum water content in snow and flood-time precipitation in riverbed networks and taking them into account in the forecast model
+- Forecasting river streamflow based on building physical and statistical dependencies of discharge on key discharge drivers. Long-term forecasting of spring floods on plain rivers. Physical fundamentals for high-water elements forecasting. Springtime river discharge water balance equation. Discharge formation features in various physical and geographical areas. Gauging maximum water content in snow and flood-time precipitation. Infiltration, surface retaining and evaporation related water losses. Factors of water infiltration into frozen soil. Calculating soil water content at the beginning dates of winter and springtime snow melting in various part of the basin
+- Techniques for determining how water gets to basin surface. Estimated rain characteristics. Reduction of maximum intensity of precipitation over time. Techniques for calculating the marginal intensity and layer of rain precipitation
+- Calculating intra-year level distribution if observation records are insufficient or non-existent. Determining maximum river water levels if observation records are insufficient or non-existent.
