@@ -25,9 +25,9 @@ The map above shows the Amur River basin and its main tributaries, with gradatio
 
 ### Dataset description
 
-The dataset can be downloaded [here](https://storage.yandexcloud.net/datasouls-ods/materials/c6be1003/datasets.zip).
+The dataset can be downloaded [here](https://drive.google.com/file/d/1vgS7EON5tjef5tFoPlQc1aBi0kC9eKhB/view?usp=sharing).
 
-A detailed description of this dataset can be found in [```desc/datasets_description_en.pdf```](https://github.com/sberbank-ai/no_flood_with_ai_aij2020/blob/main/desc/datasets_description_en.pdf)
+A detailed description of this dataset can be found in [```desc/datasets_description_en.pdf```](/desc/datasets_description_en.md)
 
 
 ### Baseline
