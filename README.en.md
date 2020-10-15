@@ -34,6 +34,8 @@ A detailed description of this dataset can be found in [```desc/datasets_descrip
 
 Notebook with a baseline task: [```baseline.ipynb```](https://github.com/sberbank-ai/no_flood_with_ai_aij2020/blob/main/baseline.ipynb)
 
+A brief description of the proposed baseline method (LightGBM) can be found in the file [`desc / baseline_description.pdf`] (https://github.com/sberbank-ai/no_flood_with_ai_aij2020/blob/main/desc/baseline_description.pdf)
+
 ### Solution description
 
 A solution is a repository hosted on [github](https://github.com). An example of such a repository from the organizers of the hackathon can be found [here](https://github.com/kclosu/no_flood_with_ai).
