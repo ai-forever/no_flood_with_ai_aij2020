@@ -29,7 +29,7 @@ The English version of this document is [here](https://github.com/sberbank-ai/no
 
 ### Описание данных
 
-Данные можно скачать [тут](https://drive.google.com/file/d/1vgS7EON5tjef5tFoPlQc1aBi0kC9eKhB/view?usp=sharing).
+Данные можно скачать [тут](https://storage.yandexcloud.net/datasouls-ods/materials/c8b9bab3/datasets.zip).
 
 Подробное описание этих данных можно найти в [```desc/datasets_description_ru.md```](/desc/datasets_description_ru.md)
 
