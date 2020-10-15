@@ -155,7 +155,8 @@
   * 'characteristicOfPressureTendency' - characteristic of the pressure tendency 
   * 'characteristicOfPressureTendencyQuality' - quality attribute
   * 'HourPressureChange3' - the magnitude of the pressure trend
-  * 'HourPressureChange3Quality' - quality attribute stationId local identifier (attribute _meteo_ in [Automated accounting system for observation units] (http://asunp.meteo.ru/geoits-rest/services/asunp/geo.json))
+  * 'HourPressureChange3Quality' - quality attribute stationId local identifier (attribute _meteo_ in 
+  [Automated accounting system for observation units](http://asunp.meteo.ru/geoits-rest/services/asunp/geo.json))
 
   More details in **meteo_new/readme.pdf**
 
