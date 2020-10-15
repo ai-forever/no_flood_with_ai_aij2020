@@ -38,6 +38,8 @@ The English version of this document is [here](https://github.com/sberbank-ai/no
 
 Ноутбук с бейзлайном: [```baseline.ipynb```](https://github.com/sberbank-ai/no_flood_with_ai_aij2020/blob/main/baseline.ipynb)
 
+Краткое описание предложенного в бейзлайне метода (LightGBM) можно найти в файле [`desc/baseline_description.pdf`](https://github.com/sberbank-ai/no_flood_with_ai_aij2020/blob/main/desc/baseline_description.pdf)
+
 ### Оценка решения
 
 Соревнование проходит в формате хакатона.
